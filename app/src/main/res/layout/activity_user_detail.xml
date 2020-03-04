@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.UserDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@id/toolbar"
+            app:expandedTitleMarginStart="88dp"
+            app:expandedTitleMarginBottom="36dp"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutTitleStyle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5">
+
+                <com.lzx.guanchajava.view.widget.UrlImageView
+                    android:id="@+id/user_pic"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/header_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/colorTextInDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_pic" />
+
+                <TextView
+                    android:id="@+id/header_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/colorTextInDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/header_attention" />
+
+                <TextView
+                    android:id="@+id/header_follow"
+                    android:layout_width="56dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="关注"
+                    android:textColor="@color/colorTextInDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_user_detail" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

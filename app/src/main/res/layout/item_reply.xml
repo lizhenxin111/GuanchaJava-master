@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/replied_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/colorArticleBackground"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/reply_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_light"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lzx.guanchajava.view.widget.UrlImageView
+        android:id="@+id/reply_pic"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reply_title" />
+
+    <TextView
+        android:id="@+id/reply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/reply_pic"
+        app:layout_constraintTop_toTopOf="@+id/reply_pic" />
+
+    <ImageButton
+        android:id="@+id/reply_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_more_12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reply_comment_btn"
+        app:layout_constraintEnd_toStartOf="@+id/reply_comment_btn"
+        app:layout_constraintTop_toTopOf="@+id/reply_comment_btn" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reply_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorParentReplyBackground"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reply_pic"
+        app:layout_constraintTop_toBottomOf="@+id/reply_name">
+
+
+        <TextView
+            android:id="@+id/reply_parent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/reply_parent_more" />
+
+        <TextView
+            android:id="@+id/reply_parent_more"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:text="查看回复"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reply_parent_time"
+            app:layout_constraintTop_toBottomOf="@+id/reply_parent_content" />
+
+        <ImageButton
+            android:id="@+id/reply_parent_comment_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_comment_12dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/reply_parent_tread_btn"
+            app:layout_constraintTop_toTopOf="@+id/reply_parent_more" />
+
+        <TextView
+            android:id="@+id/reply_parent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <cn.droidlover.xrichtext.XRichText
+            android:id="@+id/reply_parent_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:lineSpacingMultiplier="@dimen/size_line_spacing_mutiplier"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/size_reply"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reply_parent_name" />
+
+        <TextView
+            android:id="@+id/reply_parent_praise_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_praise_12dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/reply_parent_comment_btn" />
+
+        <TextView
+            android:id="@+id/reply_parent_tread_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_tread_12dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/reply_parent_praise_btn"
+            app:layout_constraintTop_toTopOf="@+id/reply_parent_comment_btn" />
+
+        <ImageButton
+            android:id="@+id/reply_parent_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more_12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/reply_parent_comment_btn"
+            app:layout_constraintEnd_toStartOf="@+id/reply_parent_comment_btn"
+            app:layout_constraintTop_toTopOf="@+id/reply_parent_comment_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <cn.droidlover.xrichtext.XRichText
+        android:id="@+id/reply_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:lineSpacingMultiplier="@dimen/size_line_spacing_mutiplier"
+        android:textSize="@dimen/size_reply"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reply_pic"
+        app:layout_constraintTop_toBottomOf="@+id/reply_parent" />
+
+    <TextView
+        android:id="@+id/reply_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/reply_pic"
+        app:layout_constraintTop_toBottomOf="@+id/reply_content" />
+
+    <TextView
+        android:id="@+id/reply_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:text="查看回复"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/reply_time"
+        app:layout_constraintTop_toTopOf="@+id/reply_time" />
+
+
+    <ImageButton
+        android:id="@+id/reply_comment_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_comment_12dp"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/reply_tread_btn"
+        app:layout_constraintTop_toTopOf="@+id/reply_time" />
+
+
+    <TextView
+        android:id="@+id/reply_tread_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_tread_12dp"
+        android:drawablePadding="4dp"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/reply_praise_btn"
+        app:layout_constraintTop_toTopOf="@+id/reply_comment_btn" />
+
+    <TextView
+        android:id="@+id/reply_praise_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_praise_12dp"
+        android:drawablePadding="4dp"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reply_comment_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

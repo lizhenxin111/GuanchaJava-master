@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_text_size">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+        <item>超大</item>
+    </string-array>
+    <string-array name="pref_text_size_value">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorArticleOther">
+    <TextView
+        android:id="@+id/recommend_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------作者文章------"
+        android:textColor="@color/textColor"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <com.lzx.guanchajava.view.widget.EmptyRecyclerView
+        android:id="@+id/recommend_author_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/recommend_related"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------相关推荐------"
+        android:textColor="@color/textColor"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <com.lzx.guanchajava.view.widget.EmptyRecyclerView
+        android:id="@+id/recommend_related_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/recommend_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------24小时最热------"
+        android:textColor="@color/textColor"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <com.lzx.guanchajava.view.widget.EmptyRecyclerView
+        android:id="@+id/recommend_hot_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>

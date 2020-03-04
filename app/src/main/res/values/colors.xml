@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e51c23</color>
+    <color name="colorPrimaryDark">#e51c23</color>
+    <color name="colorAccent">#e51c23</color>
+
+    <color name="textColor">#4f4f4f</color>
+    <color name="colorTextInDark">#fafafa</color>
+    <color name="colorArticleBackground">#fdfdfd</color>
+    <color name="colorArticleOther">#f2f2f2</color>
+
+    <color name="drawableColor">#4f4f4f</color>
+    <color name="colorChipBackground">#f7f7f7</color>
+    <color name="colorParentReplyBackground">#eee</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="tab_background">#fafafa</color>
+
+    <color name="imageForeground">#00000000</color>
+    <color name="bottomNavigationColor">@color/colorArticleBackground</color>
+
+    <color name="colorUnread">#FFF8DC</color>
+
+    <color name="colorTextInputLayoutBackground">#0000</color>
+</resources>

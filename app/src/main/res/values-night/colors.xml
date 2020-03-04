@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#191919</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorAccent">#666</color>
+
+    <color name="textColor">#808080</color> <!--#666666 ~ #808080-->
+    <color name="colorTextInDark">#808080</color>
+    <color name="colorArticleBackground">#191919</color>
+    <color name="colorArticleOther">#323232</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="tab_background">#111</color>
+
+    <color name="drawableColor">#fafafa</color>
+    <color name="colorChipBackground">#f7f7f7</color>
+    <color name="colorParentReplyBackground">#222</color>
+
+    <color name="imageForeground">#99000000</color>
+    <color name="bottomNavigationColor" tools:keep="@color/bottomNavigationColor">@color/colorPrimaryDark</color>
+    <color name="colorUnread">#292929</color>
+
+    <color name="colorTextInputLayoutBackground">@color/colorAccent</color>
+</resources>

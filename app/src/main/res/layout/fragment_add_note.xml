@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorArticleBackground">
+    <ImageButton
+        android:id="@+id/add_note_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_note_title"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toStartOf="@+id/add_note_send"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/add_note_close"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageButton
+        android:id="@+id/add_note_send"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_menu_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_note_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_note_close">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="添加笔记"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:lines="4" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

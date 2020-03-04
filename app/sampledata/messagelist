@@ -1,0 +1,59 @@
+{
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "total": 1,
+    "items": {
+      "sender": [
+        {
+          "uid": 251804,
+          "user_nick": "半瓶酱油",
+          "avatar": "https://i.guancha.cn/bbs/2019/04/07/20190407105152356.png",
+          "user_description": "没啥签名",
+          "user_level_logo": "",
+          "isblocked": false
+        }
+      ],
+      "receiver": [
+        {
+          "uid": 257703,
+          "user_nick": "lala_vx_gigi4985",
+          "avatar": "http://qzapp.qlogo.cn/qzapp/100546991/E93C5258A4F8B543B0A1E6774228446E/100",
+          "user_description": "免费计画稳定收入专业指导，加入昵称㣲唯一窗口谘询",
+          "user_level_logo": ""
+        }
+      ],
+      "msgs": [
+        {
+          "id": 29089,
+          "content": "分享一个赚零花的机会给您，免费计画稳定收入专业指导，查看昵称找我谘询[哈哈]",
+          "sender_id": 257703,
+          "receiver_id": 251804,
+          "created_at": "2019-01-07 15:07:42",
+          "has_accusation": false
+        }
+      ]
+    }
+  }
+}
+
+{
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "total": 0,
+    "items": {
+      "sender": [
+        {
+          "uid": 251804,
+          "user_nick": "半瓶酱油",
+          "avatar": "https://i.guancha.cn/bbs/2019/04/07/20190407105152356.png",
+          "user_description": "没啥签名",
+          "user_level_logo": "",
+          "isblocked": false
+        }
+      ],
+      "msgs": []
+    }
+  }
+}

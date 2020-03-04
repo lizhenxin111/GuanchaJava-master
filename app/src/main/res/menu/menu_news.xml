@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_share"
+        android:title="收藏"
+        android:icon="@drawable/ic_share_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_collect"
+        android:title="分享"
+        android:icon="@drawable/ic_mark_24dp"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_note"
+        android:title="笔记"
+        android:icon="@drawable/ic_note_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_refresh_webview"
+        android:title="刷新笔记"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="never" />
+</menu>

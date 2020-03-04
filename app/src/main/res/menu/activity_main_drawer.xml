@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_menu_collect"
+            android:title="@string/nav_collection" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_menu_notification"
+            android:title="@string/nav_notice" />
+        <item
+            android:id="@+id/nav_subscribtion"
+            android:icon="@drawable/ic_menu_subscribe"
+            android:title="@string/nav_subscribtion" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_24dp"
+            android:title="足迹" />
+        <item android:id="@+id/nav_massage"
+            android:icon="@drawable/ic_menu_message"
+            android:title="@string/nav_message" />
+        <item android:id="@+id/nav_member"
+            android:icon="@drawable/ic_menu_message"
+            android:title="@string/nav_member" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/nav_feedback" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/nav_setting" />
+    </group>
+
+</menu>

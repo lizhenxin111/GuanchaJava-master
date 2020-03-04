@@ -1,0 +1,11 @@
+javascript:function(){
+    var objs = document.getElementsByTagName("img");
+    for(var i=0;i<objs.length;i++) {
+        objs[i].onclick=function() {
+            var f = this.href.lastIndexOf("_");
+            var l = this.href.lastIndexOf(".");
+            val id = this.href.slice(f, l);
+            window.imageClick.openNews(id);  //图片链接
+        }
+    }
+})()

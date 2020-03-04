@@ -1,0 +1,19 @@
+{
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "uid": 251804,
+    "user": {
+      "uid": 251804,
+      "user_nick": "半瓶酱油修改",
+      "avatar": "https://app.guancha.cn/static/imgs/default_user_pic.png",
+      "user_description": "没啥签名",
+      "mobile": "13198679158",
+      "comment_count": 202,
+      "msg_count": 0,
+      "phone_code": 86,
+      "user_level_logo": ""
+    },
+    "token": "PzG4LwABiZT6YcCvNlJsJNM2GB4ahWTe"
+  }
+}

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".view.activity.UserProfileActivity"
+    tools:showIn="@layout/activity_user_profile"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.lzx.guanchajava.view.widget.UrlImageView
+            android:id="@+id/user_pic"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="#0000"
+            android:src="@drawable/ic_menu_camera"
+            app:layout_constraintBottom_toBottomOf="@+id/user_pic"
+            app:layout_constraintEnd_toEndOf="@+id/user_pic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_name_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:counterEnabled="false"
+            app:errorEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_pic">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:drawableLeft="@drawable/ic_nick_24dp"
+                android:drawablePadding="16dp"
+                android:background="@android:color/transparent"
+                android:hint="昵称"
+                android:selectAllOnFocus="false"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/appCompatImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#0000"
+            android:src="@drawable/ic_gender_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_gender_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/user_gender_group"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="性别"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageButton"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_layout" />
+
+        <RadioGroup
+            android:id="@+id/user_gender_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageButton"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/user_gender_male"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="男" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/user_gender_female"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="女" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/user_gender_secret"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="保密" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_des_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_gender_group">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_des_text"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_description_24dp"
+                android:drawablePadding="16dp"
+                android:hint="自我描述" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_graduate_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_des_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_graduate_text"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_school_24dp"
+                android:drawablePadding="16dp"
+                android:hint="毕业院校" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_profession_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_graduate_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_profession_text"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_profession_24dp"
+                android:drawablePadding="16dp"
+                android:hint="职业" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_birthdate_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_profession_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_birthdate_text"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#0000"
+                android:drawableLeft="@drawable/ic_birthdate_24dp"
+                android:drawablePadding="16dp"
+                android:hint="出生日期" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/appCompatImageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_password_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_change_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/user_change_password" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_change_password"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#0000"
+            android:text="修改密码"
+            android:textColor="@color/textColor"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageButton2"
+            app:layout_constraintTop_toBottomOf="@+id/user_birthdate_layout" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/appCompatImageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_logout_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/user_sign_out"
+            app:layout_constraintBottom_toBottomOf="@id/user_sign_out"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_sign_out"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#0000"
+            android:text="退出账号"
+            android:textColor="@color/textColor"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/user_change_password" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

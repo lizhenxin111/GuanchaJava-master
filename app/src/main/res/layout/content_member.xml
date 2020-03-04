@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/member_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".member.activity.MemberActivity"
+    tools:showIn="@layout/activity_member"
+    android:padding="@dimen/card_elevation">
+
+    <GridLayout
+        android:id="@+id/member_function_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_elevation"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:translationZ="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/member_comment_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="收藏评论"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/member_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="新闻笔记"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/member_block_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="超级黑名单"
+            android:textSize="@dimen/text_size"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/member_future_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:translationZ="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/member_function_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:gravity="center"
+            android:text="待开放"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/member_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="主题"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/member_article_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="阅读背景"
+            android:textSize="@dimen/text_size"/>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_container"
+    android:background="@color/colorArticleBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/news_author_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:background="@color/colorArticleBackground"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/news_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="以下内容为用户在观察者网风闻社区上传并发布,仅代表发帖用户观点"
+            android:textSize="8sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/news_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:background="@color/colorArticleBackground"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <com.lzx.guanchajava.view.widget.ContentWebView
+            android:id="@+id/news_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/news_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/textColor"
+            android:background="@color/colorArticleBackground" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/news_vote_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+        <LinearLayout
+            android:id="@+id/news_tag_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+        <FrameLayout
+            android:id="@+id/news_recomend_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorArticleOther"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

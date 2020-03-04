@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="gc.db" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.lzx.guanchajava.POJO.bean.db.DBHistory" />
+        <mapping class="com.lzx.guanchajava.POJO.bean.db.DBAuthor" />
+        <mapping class="com.lzx.guanchajava.POJO.bean.db.DBSearch" />
+        <mapping class="com.lzx.guanchajava.member.bean.DBNote" />
+        <mapping class="com.lzx.guanchajava.member.bean.DBComment" />
+        <mapping class="com.lzx.guanchajava.member.bean.DBHardBlack" />
+    </list>
+
+</litepal>

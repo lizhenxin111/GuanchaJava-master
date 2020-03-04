@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="chipIconTint">@color/colorArticleBackground</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CollapsingToolbarLayoutTitleStyle">
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>-->
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!--NavigationIcon和标题之间的距离-->
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+</resources>
